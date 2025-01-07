@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx", // or "react" if you use React < 17
+    "strict": true,
+    "esModuleInterop": true,
+    "target": "ES6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "lib": ["dom", "es6"]
+  }
+}
