@@ -1,12 +1,23 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx", // or "react" if you use React < 17
+    "target": "ES2021",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
     "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
     "esModuleInterop": true,
-    "target": "ES6",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "baseUrl": "./src",
-    "lib": ["dom", "es6"]
-  }
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src"
+  ]
 }
