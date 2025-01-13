@@ -8,7 +8,6 @@ const apiClient = axios.create({
 apiClient.interceptors.response.use(
   (response) => response,
   (error) => {
-    // handle errors or refresh token logic
     return Promise.reject(error);
   }
 );
