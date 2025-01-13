@@ -2,11 +2,9 @@ import axios from 'axios';
 
 const apiClient = axios.create({
   baseURL: process.env.REACT_APP_API_URL,
-  // e.g. "http://95.217.134.12:4010"
   timeout: 10000,
 });
 
-// Interceptors example (optional, good for handling errors, auth, logging, etc.)
 apiClient.interceptors.response.use(
   (response) => response,
   (error) => {
@@ -17,7 +15,6 @@ apiClient.interceptors.response.use(
 
 export const createPdf = async (text: string): Promise<Blob> => {
   const apiKey = process.env.REACT_APP_API_KEY;
-  // Make sure to define REACT_APP_API_KEY in .env
   if (!apiKey) {
     throw new Error('API key not found in .env');
   }
